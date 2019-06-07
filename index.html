@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soundex Test</title>
+    <style>
+        .status {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+        <div class="form-group has-feedback">
+                <div class="input-group">
+                  <span class="input-group-addon" style="background-color:#FFFFFF;"><span class="glyphicon glyphicon-search"></span></span>
+                  <input type="text" class="form-control" id="myInput" onkeyup="SearchIt()" placeholder="Search for Soundex code" title="Type Soundex code" style="border-left: 0px; text-align: center;">
+           </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="status text-center">Initializing...</h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table table-striped" style="display: none">
+            <thead>
+                <tr>
+                    <th>Soundex</th>
+                    <th>Words</th>
+                </tr>
+            </thead>
+            <tbody id="Contents" class="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="./function.js"></script>
+    <script>
+        $(function () {
+            myFunction();
+        })
+    </script>
+
+</body>
+</html>
